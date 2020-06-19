@@ -38,7 +38,7 @@ int main(){
 	int num_elementos = ftell(flujo); //cantidad total de caracteres que tiene el archivo
 	rewind (flujo); //mueve el flujo al inicio
 
-	char * cadena = (char *) calloc(sizeof(char), num_elementos); //array dinámico
+	char * cadena = (char *) calloc(sizeof(char), num_elementos); //array
 	if (cadena == NULL){
 		cout << "Error en reserva de memoria!!!" << endl;
 		return 2;
